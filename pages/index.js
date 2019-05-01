@@ -6,4 +6,4 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-export default () => <Title> My page</Title>;
+export default () => <Title>My page</Title>;
