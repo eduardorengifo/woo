@@ -1,6 +1,6 @@
 # Box
 
-Responsive box-model layout component.
+> Responsive box-model layout component.
 
 To implement Box component into your project you'll need to add the import:
 
