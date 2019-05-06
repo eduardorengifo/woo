@@ -10,7 +10,7 @@ stories.add(
   'default',
   () => {
     return (
-      <Box p={5} fontSize={4} width={[1, 1, 1 / 2]} color="white" bg="primary">
+      <Box p={5} fontSize={4} width={[1, 1, 1 / 2]} bg="primary">
         Box
       </Box>
     );
