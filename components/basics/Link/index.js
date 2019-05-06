@@ -8,7 +8,7 @@ const Link = styled(Box)(themed('Link'));
 
 Link.defaultProps = {
   as: 'a',
-  color: 'blue'
+  color: 'secondary'
 };
 
 export default Link;

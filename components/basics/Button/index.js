@@ -42,7 +42,7 @@ Button.defaultProps = {
   m: 0,
   px: 3,
   py: 2,
-  color: 'white',
+  color: 'text',
   bg: 'primary',
   border: 0,
   borderRadius: 4

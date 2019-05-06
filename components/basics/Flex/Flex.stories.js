@@ -12,7 +12,7 @@ storiesOf('Basics|Flex', module).add(
       <Box p={3} width={1 / 2} color="white" bg="secondary">
         Flex
       </Box>
-      <Box p={3} width={1 / 2} color="white" bg="primary">
+      <Box p={3} width={1 / 2} bg="primary">
         Box
       </Box>
     </Flex>

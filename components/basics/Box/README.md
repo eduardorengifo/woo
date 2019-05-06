@@ -11,7 +11,7 @@ import { Box } from '../components/basics';
 After adding import into your project you can use it simply like:
 
 ```jsx
-<Box p={5} fontSize={4} width={[1, 1, 1 / 2]} color="white" bg="primary">
+<Box p={5} fontSize={4} width={[1, 1, 1 / 2]} bg="primary">
   Box
 </Box>
 ```

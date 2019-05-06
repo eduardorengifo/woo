@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => <div>My page</div>;
+import PanelLayout from '../layouts/Panel';
+
+export default () => <PanelLayout>My page</PanelLayout>;

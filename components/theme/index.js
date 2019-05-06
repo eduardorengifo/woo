@@ -4,17 +4,18 @@ export { default as GlobalStyle } from './GlobalStyle';
 // Colors
 
 const baseColors = {
-  black: '#000',
-  white: '#fff'
+  white: '#fff',
+  lightgray: '#fafafa'
 };
 
 const colors = {
-  text: baseColors.black,
-  background: baseColors.white,
-  primary: '#00f',
-  secondary: '#00a',
+  border: '#ebeced',
+  text: '#67717A',
+  background: baseColors.lightgray,
+  primary: baseColors.white,
+  secondary: '#24292E',
   gray: '#eee',
-  lightgray: '#fafafa'
+  lightgray: baseColors.lightgray
 };
 
 // Breakpoints
@@ -69,7 +70,7 @@ export default {
   },
   buttons: {
     primary: {
-      color: baseColors.white,
+      color: baseColors.text,
       backgroundColor: colors.primary
     },
     secondary: {
@@ -77,7 +78,7 @@ export default {
       backgroundColor: colors.secondary
     },
     outline: {
-      color: colors.primary,
+      color: colors.text,
       backgroundColor: 'transparent',
       boxShadow: 'inset 0 0 0 2px'
     }
