@@ -4,11 +4,15 @@ import Box from '../Box';
 
 const themed = key => props => props.theme[key];
 
-const Link = styled(Box)(themed('Link'));
+const Link = styled(Box)`
+  ${themed('Link')}
+`;
 
 Link.defaultProps = {
   as: 'a',
   color: 'secondary'
 };
+
+Link.displayName = 'Link';
 
 export default Link;

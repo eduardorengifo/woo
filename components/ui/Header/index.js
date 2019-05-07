@@ -7,6 +7,7 @@ import Logo from '../../../static/svg/logo/dark.svg';
 export default () => (
   <Nav
     as="header"
+    bg="secondary"
     justifyContent="space-between"
     alignItems="center"
     borderBottom="1px solid"

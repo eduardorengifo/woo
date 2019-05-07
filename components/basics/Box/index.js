@@ -11,19 +11,17 @@ import {
 
 const themed = key => props => props.theme[key];
 
-const Box = styled('div')(
-  {
-    boxSizing: 'border-box'
-  },
-  space,
-  width,
-  fontSize,
-  color,
-  flex,
-  order,
-  alignSelf,
-  themed('Box')
-);
+const Box = styled.div`
+  box-sizing: border-box;
+  ${space}
+  ${width}
+  ${fontSize}
+  ${color}
+  ${flex}
+  ${order}
+  ${alignSelf}
+  ${themed('Box')}
+`;
 
 Box.propTypes = {
   ...space.propTypes,
@@ -34,5 +32,7 @@ Box.propTypes = {
   ...order.propTypes,
   ...alignSelf.propTypes
 };
+
+Box.displayName = 'Box';
 
 export default Box;

@@ -17,19 +17,19 @@ import Box from '../Box';
 const themed = key => props => props.theme[key];
 const cards = variant({ key: 'cards' });
 
-const Card = styled(Box)(
-  borders,
-  borderColor,
-  borderRadius,
-  boxShadow,
-  backgroundImage,
-  backgroundSize,
-  backgroundPosition,
-  backgroundRepeat,
-  opacity,
-  cards,
-  themed('Card')
-);
+const Card = styled(Box)`
+  ${borders}
+  ${borderColor}
+  ${borderRadius}
+  ${boxShadow}
+  ${backgroundImage}
+  ${backgroundSize}
+  ${backgroundPosition}
+  ${backgroundRepeat}
+  ${opacity}
+  ${cards}
+  ${themed('Card')}
+`;
 
 Card.propTypes = {
   ...borders.propTypes,
@@ -48,5 +48,7 @@ Card.defaultProps = {
   boxShadow: 'sm',
   borderRadius: 4
 };
+
+Card.displayName = 'Card';
 
 export default Card;

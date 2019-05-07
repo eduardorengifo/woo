@@ -11,14 +11,14 @@ import Flex from '../Flex';
 
 const themed = key => props => props.theme[key];
 
-const Nav = styled(Flex)(
-  height,
-  minHeight,
-  borderTop,
-  borderBottom,
-  borderColor,
-  themed('Nav')
-);
+const Nav = styled(Flex)`
+  ${height}
+  ${minHeight}
+  ${borderTop}
+  ${borderBottom}
+  ${borderColor}
+  ${themed('Nav')}
+`;
 
 Nav.propTypes = {
   ...height.propTypes,
@@ -31,5 +31,7 @@ Nav.defaultProps = {
   px: 2,
   minHeight: '3.5rem'
 };
+
+Nav.displayName = 'Nav';
 
 export default Nav;

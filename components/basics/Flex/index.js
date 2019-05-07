@@ -10,16 +10,14 @@ import Box from '../Box';
 
 const themed = key => props => props.theme[key];
 
-const Flex = styled(Box)(
-  {
-    display: 'flex'
-  },
-  flexWrap,
-  flexDirection,
-  alignItems,
-  justifyContent,
-  themed('Flex')
-);
+const Flex = styled(Box)`
+  display: flex;
+  ${flexWrap}
+  ${flexDirection}
+  ${alignItems}
+  ${justifyContent}
+  ${themed('Flex')}
+`;
 
 Flex.propTypes = {
   ...flexWrap.propTypes,
@@ -27,5 +25,7 @@ Flex.propTypes = {
   ...alignItems.propTypes,
   ...justifyContent.propTypes
 };
+
+Flex.displayName = 'Flex';
 
 export default Flex;

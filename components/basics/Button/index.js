@@ -11,21 +11,19 @@ import Box from '../Box';
 
 const themed = key => props => props.theme[key];
 
-const Button = styled(Box)(
-  {
-    appearance: 'none',
-    display: 'inline-block',
-    textAlign: 'center',
-    lineHeight: 'inherit',
-    textDecoration: 'none'
-  },
-  fontWeight,
-  borders,
-  borderColor,
-  borderRadius,
-  buttonStyle,
-  themed('Button')
-);
+const Button = styled(Box)`
+  appearance: none;
+  display: inline-block;
+  text-align: center;
+  line-height: inherit;
+  text-decoration: none;
+  ${fontWeight}
+  ${borders}
+  ${borderColor}
+  ${borderRadius}
+  ${buttonStyle}
+  ${themed('Button')}
+`;
 
 Button.propTypes = {
   ...fontWeight.propTypes,
@@ -47,5 +45,7 @@ Button.defaultProps = {
   border: 0,
   borderRadius: 4
 };
+
+Button.displayName = 'Button';
 
 export default Button;

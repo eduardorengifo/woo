@@ -4,7 +4,9 @@ import Text from '../Text';
 
 const themed = key => props => props.theme[key];
 
-const Heading = styled(Text)(themed('Heading'));
+const Heading = styled(Text)`
+  ${themed('Heading')}
+`;
 
 Heading.defaultProps = {
   as: 'h2',
@@ -12,5 +14,7 @@ Heading.defaultProps = {
   fontSize: 4,
   fontWeight: 'bold'
 };
+
+Heading.displayName = 'Heading';
 
 export default Heading;
