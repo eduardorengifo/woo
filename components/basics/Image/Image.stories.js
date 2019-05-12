@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import Image from './index';
 import README from './README.md';
 
-storiesOf('Basics|Image').add(
+storiesOf('Basics|Image', module).add(
   'default',
   () => (
     <Image
