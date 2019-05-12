@@ -1,6 +1,7 @@
 import { configure, addDecorator } from '@storybook/react';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { withKnobs } from '@storybook/addon-knobs';
 
 import theme, { GlobalStyle } from '../components/theme';
 
@@ -24,5 +25,7 @@ addDecorator(story => (
     </>
   </ThemeProvider>
 ));
+
+addDecorator(withKnobs);
 
 configure(loadStories, module);

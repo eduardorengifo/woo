@@ -5,7 +5,7 @@ import Nav from './index';
 import Box from '../Box';
 import README from './README.md';
 
-storiesOf('Basics|Nav').add(
+storiesOf('Basics|Nav', module).add(
   'default',
   () => (
     <Nav
