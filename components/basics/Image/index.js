@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import { height, borderRadius } from 'styled-system';
 
 import Box from '../Box';
-
-const themed = key => props => props.theme[key];
+import { themed } from '../../../lib/utils';
 
 const Image = styled(Box)`
   max-width: 100%;

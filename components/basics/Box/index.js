@@ -9,7 +9,7 @@ import {
   fontSize
 } from 'styled-system';
 
-const themed = key => props => props.theme[key];
+import { themed } from '../../../lib/utils';
 
 const Box = styled.div`
   box-sizing: border-box;
