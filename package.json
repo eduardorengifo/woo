@@ -33,7 +33,7 @@
     "styled-components": "4.2.0",
     "styled-icons": "8.0.0",
     "styled-reset": "2.0.13",
-    "styled-system": "4.2.2"
+    "styled-system": "4.2.4"
   },
   "devDependencies": {
     "@storybook/addon-actions": "5.0.11",
