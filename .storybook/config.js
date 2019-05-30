@@ -3,7 +3,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import theme, { GlobalStyle } from '../components/theme';
+import theme, { GlobalStyle } from '../theme';
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../components', true, /.stories.js$/);

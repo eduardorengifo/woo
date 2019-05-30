@@ -2,7 +2,7 @@ import App, { Container } from 'next/app';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import theme, { GlobalStyle } from '../components/theme';
+import theme, { GlobalStyle } from '../theme';
 import { UserAgentProvider } from '../lib/ua';
 
 export default class WooApp extends App {
