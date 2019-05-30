@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 import Text from '../Text';
-
-const themed = key => props => props.theme[key];
+import { themed } from '../../../lib/utils';
 
 const Heading = styled(Text)`
   ${themed('Heading')}

@@ -8,8 +8,7 @@ import {
 } from 'styled-system';
 
 import Flex from '../Flex';
-
-const themed = key => props => props.theme[key];
+import { themed } from '../../../lib/utils';
 
 const Nav = styled(Flex)`
   ${height}

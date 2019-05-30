@@ -3,18 +3,20 @@ import {
   space,
   color,
   width,
+  height,
   flex,
   order,
   alignSelf,
   fontSize
 } from 'styled-system';
 
-const themed = key => props => props.theme[key];
+import { themed } from '../../../lib/utils';
 
 const Box = styled.div`
   box-sizing: border-box;
   ${space}
   ${width}
+  ${height}
   ${fontSize}
   ${color}
   ${flex}
@@ -26,6 +28,7 @@ const Box = styled.div`
 Box.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
+  ...height.propTypes,
   ...fontSize.propTypes,
   ...color.propTypes,
   ...flex.propTypes,

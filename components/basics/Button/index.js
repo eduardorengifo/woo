@@ -8,10 +8,10 @@ import {
 } from 'styled-system';
 
 import Box from '../Box';
-
-const themed = key => props => props.theme[key];
+import { themed } from '../../../lib/utils';
 
 const Button = styled(Box)`
+  cursor: pointer;
   appearance: none;
   display: inline-block;
   text-align: center;

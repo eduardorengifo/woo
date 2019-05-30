@@ -13,8 +13,8 @@ import {
 } from 'styled-system';
 
 import Box from '../Box';
+import { themed } from '../../../lib/utils';
 
-const themed = key => props => props.theme[key];
 const cards = variant({ key: 'cards' });
 
 const Card = styled(Box)`
