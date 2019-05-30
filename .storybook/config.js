@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { withKnobs } from '@storybook/addon-knobs';
 
 import theme, { GlobalStyle } from '../theme';
+import { UserAgentProvider } from '../lib/ua';
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../components', true, /.stories.js$/);
@@ -15,13 +16,15 @@ addDecorator(story => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyle />
-      <div
-        style={{
-          padding: '1rem'
-        }}
-      >
-        {story()}
-      </div>
+      <UserAgentProvider value={navigator.userAgent}>
+        <div
+          style={{
+            padding: '1rem'
+          }}
+        >
+          {story()}
+        </div>
+      </UserAgentProvider>
     </>
   </ThemeProvider>
 ));

@@ -3,6 +3,7 @@ import {
   space,
   color,
   width,
+  height,
   flex,
   order,
   alignSelf,
@@ -15,6 +16,7 @@ const Box = styled.div`
   box-sizing: border-box;
   ${space}
   ${width}
+  ${height}
   ${fontSize}
   ${color}
   ${flex}
@@ -26,6 +28,7 @@ const Box = styled.div`
 Box.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
+  ...height.propTypes,
   ...fontSize.propTypes,
   ...color.propTypes,
   ...flex.propTypes,

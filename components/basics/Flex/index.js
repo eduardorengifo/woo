@@ -3,6 +3,7 @@ import {
   flexWrap,
   flexDirection,
   alignItems,
+  alignContent,
   justifyContent
 } from 'styled-system';
 
@@ -14,6 +15,7 @@ const Flex = styled(Box)`
   ${flexWrap}
   ${flexDirection}
   ${alignItems}
+  ${alignContent}
   ${justifyContent}
   ${themed('Flex')}
 `;
@@ -22,6 +24,7 @@ Flex.propTypes = {
   ...flexWrap.propTypes,
   ...flexDirection.propTypes,
   ...alignItems.propTypes,
+  ...alignContent.propTypes,
   ...justifyContent.propTypes
 };
 
