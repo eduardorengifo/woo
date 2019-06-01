@@ -22,6 +22,7 @@ const Mask = ({ visible, bg, ua, children, onClick }) => {
   return (
     <Position position="fixed" zIndex={1}>
       <StyledMask
+        data-cy="mask"
         position="fixed"
         top={0}
         left={0}
