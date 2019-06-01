@@ -19,7 +19,7 @@ export default ({ onMenu }) => (
       }
     }}
   >
-    <Button px={0} py={0} onClick={onMenu}>
+    <Button data-cy="menu" px={0} py={0} onClick={onMenu}>
       <Menu />
     </Button>
     <Logo />
