@@ -8,8 +8,9 @@ const mobile = preset => {
   cy.wait(200);
 
   // Open Drawer
-  cy.get(menu).click();
-  cy.get(menu).should('be.visible');
+  cy.get(menu)
+    .click()
+    .should('be.visible');
   cy.get(mask).should('be.visible');
 
   cy.wait(1000);
@@ -20,8 +21,9 @@ const mobile = preset => {
   cy.viewport(preset, 'landscape');
 
   // Open Drawer
-  cy.get(menu).click();
-  cy.get(menu).should('be.visible');
+  cy.get(menu)
+    .click()
+    .should('be.visible');
   cy.get(mask).should('be.visible');
 
   cy.wait(1000);
