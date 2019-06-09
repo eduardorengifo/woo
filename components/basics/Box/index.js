@@ -3,36 +3,39 @@ import {
   space,
   color,
   width,
+  height,
   flex,
   order,
   alignSelf,
   fontSize
 } from 'styled-system';
 
-const themed = key => props => props.theme[key];
+import { themed } from '../../../lib/utils';
 
-const Box = styled('div')(
-  {
-    boxSizing: 'border-box'
-  },
-  space,
-  width,
-  fontSize,
-  color,
-  flex,
-  order,
-  alignSelf,
-  themed('Box')
-);
+const Box = styled.div`
+  box-sizing: border-box;
+  ${space}
+  ${width}
+  ${height}
+  ${fontSize}
+  ${color}
+  ${flex}
+  ${order}
+  ${alignSelf}
+  ${themed('Box')}
+`;
 
 Box.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
+  ...height.propTypes,
   ...fontSize.propTypes,
   ...color.propTypes,
   ...flex.propTypes,
   ...order.propTypes,
   ...alignSelf.propTypes
 };
+
+Box.displayName = 'Box';
 
 export default Box;

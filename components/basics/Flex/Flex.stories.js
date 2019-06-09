@@ -9,10 +9,10 @@ storiesOf('Basics|Flex', module).add(
   'default',
   () => (
     <Flex>
-      <Box p={3} width={1 / 2} color="white" bg="secondary">
+      <Box px={3} py={5} width={1 / 2} color="primary" bg="secondary">
         Flex
       </Box>
-      <Box p={3} width={1 / 2} bg="primary">
+      <Box px={3} py={5} width={1 / 2} color="secondary" bg="primary">
         Box
       </Box>
     </Flex>

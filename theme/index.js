@@ -40,6 +40,7 @@ export default {
   fontSizes,
   colors,
   space,
+  zIndices: [5, 10, 15, 98, 998, 9998, 99998],
   fonts: {
     sans: 'system-ui, sans-serif',
     mono: 'Menlo, monospace'
