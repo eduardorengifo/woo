@@ -41,7 +41,7 @@
     "styled-components": "4.3.1",
     "styled-icons": "8.1.0",
     "styled-reset": "2.0.15",
-    "styled-system": "5.0.6",
+    "styled-system": "5.0.10",
     "ua-parser-js": "0.7.20"
   },
   "devDependencies": {
