@@ -59,7 +59,7 @@
     "babel-plugin-styled-components": "1.10.6",
     "cypress": "3.3.2",
     "eslint": "5.16.0",
-    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-airbnb": "17.1.1",
     "eslint-config-prettier": "6.0.0",
     "eslint-loader": "2.1.2",
     "eslint-plugin-cypress": "2.2.1",
