@@ -39,7 +39,7 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "styled-components": "4.3.2",
-    "styled-icons": "8.6.0",
+    "styled-icons": "9.3.0",
     "styled-reset": "2.0.17",
     "styled-system": "5.1.2",
     "ua-parser-js": "0.7.20"
