@@ -40,7 +40,7 @@
     "react-dom": "16.8.6",
     "styled-components": "4.3.2",
     "styled-icons": "9.3.0",
-    "styled-reset": "2.0.17",
+    "styled-reset": "4.2.2",
     "styled-system": "5.1.4",
     "ua-parser-js": "0.7.20"
   },
